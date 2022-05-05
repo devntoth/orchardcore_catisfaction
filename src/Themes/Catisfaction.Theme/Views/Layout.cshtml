@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="@Orchard.CultureName()">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@RenderTitleSegments(Site.SiteName, "before")</title>
+    <style asp-src="~/Catisfaction.Theme/site.css"></style>
+    <link runat="server" type="image/x-icon" rel="shortcut icon" href="~/Catisfaction.Theme/favicon.png">
+    <link runat="server" type="image/x-icon" rel="icon" href="~/Catisfaction.Theme/favicon.png">
+    <script asp-name="bootstrap" version="5" at="Foot"></script>
+    <style asp-name="thetheme-bootstrap-oc" version="1"></style>
+    <style asp-name="font-awesome" version="5"></style>
+    <resources type="Meta" />
+    <resources type="HeadLink" />
+    <resources type="Stylesheet" />
+    <resources type="HeadScript" />
+    @await RenderSectionAsync("HeadMeta", required: false)
+</head>
+<body class="body" dir="@Orchard.CultureDir()">
+
+<div class="world" data-world>
+    <shape type="Navbar"></shape>
+
+    @await RenderSectionAsync("Header", required: false)
+    <main class="container">
+        @await RenderBodyAsync()
+    </main>
+
+    @if (IsSectionDefined("Footer"))
+    {
+    <footer>
+        <div class="container">
+            @await RenderSectionAsync("Footer", required: false)
+        </div>
+    </footer>
+    }
+    <resources type="FootScript" />
+</div>
+</body>
+</html>

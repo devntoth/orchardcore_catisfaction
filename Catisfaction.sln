@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF46D778-E1A7-4147-A8E5-F09E3B181882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catisfaction.Web", "src\Catisfaction.Web\Catisfaction.Web.csproj", "{DBF51DF4-5642-4A42-8A2D-C21914907659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{A918AD67-0D82-4CD8-9502-76420447AEE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catisfaction.Post", "src\Modules\Catisfaction.Post\Catisfaction.Post.csproj", "{4631F163-C793-44C0-BB11-5A03ED489FAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{1C5EC539-86C6-4A3F-84A5-3E1140F622D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catisfaction.Theme", "src\Themes\Catisfaction.Theme\Catisfaction.Theme.csproj", "{06BB49AB-E454-47D4-A4D5-4F4AF834D84F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF51DF4-5642-4A42-8A2D-C21914907659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF51DF4-5642-4A42-8A2D-C21914907659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF51DF4-5642-4A42-8A2D-C21914907659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF51DF4-5642-4A42-8A2D-C21914907659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4631F163-C793-44C0-BB11-5A03ED489FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4631F163-C793-44C0-BB11-5A03ED489FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4631F163-C793-44C0-BB11-5A03ED489FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4631F163-C793-44C0-BB11-5A03ED489FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BB49AB-E454-47D4-A4D5-4F4AF834D84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BB49AB-E454-47D4-A4D5-4F4AF834D84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BB49AB-E454-47D4-A4D5-4F4AF834D84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BB49AB-E454-47D4-A4D5-4F4AF834D84F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBF51DF4-5642-4A42-8A2D-C21914907659} = {CF46D778-E1A7-4147-A8E5-F09E3B181882}
+		{A918AD67-0D82-4CD8-9502-76420447AEE8} = {CF46D778-E1A7-4147-A8E5-F09E3B181882}
+		{4631F163-C793-44C0-BB11-5A03ED489FAE} = {A918AD67-0D82-4CD8-9502-76420447AEE8}
+		{1C5EC539-86C6-4A3F-84A5-3E1140F622D9} = {CF46D778-E1A7-4147-A8E5-F09E3B181882}
+		{06BB49AB-E454-47D4-A4D5-4F4AF834D84F} = {1C5EC539-86C6-4A3F-84A5-3E1140F622D9}
+	EndGlobalSection
+EndGlobal

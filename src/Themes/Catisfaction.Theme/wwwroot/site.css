@@ -1,0 +1,18 @@
+main {
+    margin-top: 30px;
+}
+
+div.catpost-card {
+    max-width: 650px;
+    margin: 2rem auto;
+    background-color: #212529;
+    color: #DDD;
+}
+
+.catpost-image {
+    padding: 1rem;
+}
+
+body {
+    background-image: url("https://st4.depositphotos.com/1480972/39502/v/600/depositphotos_395028294-stock-illustration-modern-stylish-texture-seamless-gentle.jpg");
+}

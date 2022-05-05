@@ -1,0 +1,19 @@
+@using OrchardCore.ContentManagement
+@model Catisfaction.Post.ViewModels.CatPostListViewModel
+
+@foreach (var post in Model.CatPosts)
+{
+    var catPost = post.As<CatPostPart>();
+    var img = catPost.Image.Paths.FirstOrDefault();
+
+    <div class="card catpost-card">
+        <div class="card-body">
+            <h5 class="card-title">@catPost.Name.Text</h5>
+            <p class="card-text">@catPost.Body.Text</p>
+        </div>
+        @if (img != null)
+        {
+            <img asset-src="@img" class="card-img-top catpost-image" alt="@catPost.Name.Text"/>
+        }
+    </div>
+}
